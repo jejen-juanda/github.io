@@ -1,18 +1,42 @@
 <!DOCTYPE html>
-
 <html>
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <title>my-first-website</title>
+<title>calculator dengan JavaScript</title>
   <LINK href="styles.css" rel="stylesheet" type="text/css">
+<script src="calculator.js"></script>
 </head>
-
 <body>
-
-<img src="https://octodex.github.com/images/daftpunktocat-thomas.gif" id="octocat" alt="octocat-gif" />
-
-<!-- Change this code here by copy and pasting your template on line 15 -->
-<p>Welcome to your first GitHub Pages website!</p>
-
+<h1 id="h0">Menampilkan Hasil Perhitungan dengan JavaScript</h1>
+<p>
+<form id="form1" name="form1" onsubmit="return false" autocomplete="on">
+<fieldset id="input1">
+<legend>Pilih Nama Dan Oprator</legend>
+<br>
+<label for="text1">Masukkan nilai pertama: </label>
+<input type="text" id="text1" onkeyup="tulis()" name="text1" title="ketik nilai" autofocus>
+<label for="select">Pilih oprator: </label>
+<select id="select" onchange="pilih()" name="select" disabled="disabled">
+<option value="a" selected>Pilih</option>
+<option value="akar">Akar</option>
+<option value="bagi">Bagi</option>
+<option value="bilangan">Cek Tipe Bilangan</option>
+<option value="kali">Kali</option>
+<option value="kpk">KPK</option>
+<option value="kurang">Kurang</option>
+<option value="modulus">Modulus</option>
+<option value="pangkat">Pangkat</option>
+<option value="tambah">Tambah</option>
+</select>
+</fieldset>
+<label for="text2">Masukkan nilai ke dua: </label>
+<input type="text" id="text2" onkeyup="cek()" name="text2" title="ketik nilai" disabled="disabled">
+<fieldset id='input2'>
+<legend>Silahkan Klik hitung untuk mengetahui hasil-nya, atau klik reset untuk mengulangi pengisian form</legend>
+<input type="submit" id="hitung" value="hitung" onclick="tampilkan()" disabled="disabled">
+<input type="reset" id="reset" onclick="back()" disabled="disabled">
+</fieldset>
+</form>
+</p>
 </body>
 </html>
