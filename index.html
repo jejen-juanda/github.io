@@ -1,42 +1,102 @@
 <!DOCTYPE html>
-<html>
+<html lang="id" translate="no">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-<title>calculator dengan JavaScript</title>
-  <LINK href="styles.css" rel="stylesheet" type="text/css">
-<script src="calculator.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Flanet Kreatif</title>
+<meta name="description" content="komunitas koding yang kreatif">
+<meta name="keywords" content="insha allah bermanfaat">
+<meta name="author" content="Kelompok 5">
+<link rel="stylesheet" href="assets/styles/style.css">
 </head>
 <body>
-<h1 id="h0">Menampilkan Hasil Perhitungan dengan JavaScript</h1>
+<header role="banner" aria-label="logo">
+<div>
+<a href="index.html">
+<img src="assets/image/logo.jpg" alt="logo flanet kreatif">
+</a>
+</div>
+<div id="head"></div>
+</header>
+<main role="main" aria-label="menu utama">
+<p id="menu"></p>
+<section role="region" aria-label="konten">
+<div>
+<article id="konten">
+<h2>Halaman Utama</h2>
 <p>
-<form id="form1" name="form1" onsubmit="return false" autocomplete="on">
-<fieldset id="input1">
-<legend>Pilih Nama Dan Oprator</legend>
+Selamat datang di Website Flanet Kreatif!
 <br>
-<label for="text1">Masukkan nilai pertama: </label>
-<input type="text" id="text1" onkeyup="tulis()" name="text1" title="ketik nilai" autofocus>
-<label for="select">Pilih oprator: </label>
-<select id="select" onchange="pilih()" name="select" disabled="disabled">
-<option value="a" selected>Pilih</option>
-<option value="akar">Akar</option>
-<option value="bagi">Bagi</option>
-<option value="bilangan">Cek Tipe Bilangan</option>
-<option value="kali">Kali</option>
-<option value="kpk">KPK</option>
-<option value="kurang">Kurang</option>
-<option value="modulus">Modulus</option>
-<option value="pangkat">Pangkat</option>
-<option value="tambah">Tambah</option>
-</select>
-</fieldset>
-<label for="text2">Masukkan nilai ke dua: </label>
-<input type="text" id="text2" onkeyup="cek()" name="text2" title="ketik nilai" disabled="disabled">
-<fieldset id='input2'>
-<legend>Silahkan Klik hitung untuk mengetahui hasil-nya, atau klik reset untuk mengulangi pengisian form</legend>
-<input type="submit" id="hitung" value="hitung" onclick="tampilkan()" disabled="disabled">
-<input type="reset" id="reset" onclick="back()" disabled="disabled">
-</fieldset>
-</form>
+ini adalah buah karya kami, kelompok lima dalam mata kuliah PEMROGRAMAN WEB 1 untuk semester lima di Universitas Pamulang.
+<br>
+terimakasih kepada bapak DOLA IRWANTO S.Kom yang telah mengajar di kelas kami.
 </p>
+</article>
+<article>
+<h2>Tugas Kelompok Lima</h2>
+<p>
+Berikut ini adalah tugas persentasi kami yang telah di persentasikan di kelas:
+<br>
+mohon maaf apabila masih terdapat banyak kesalahan dan kekurangan dalam website yang kami buat, serta dalam tugas makalah dan persentasi yang telah kami sampaikan.
+<br>
+<a href="file/makalah_perulangan_kelompok5.docx">Download Makalah</a>
+<br>
+<a href="file/persentasi_perulangan_kelompok5.pptx">Download Persentasi</a>
+<br>
+<q>happy coding, and happy learning</q>
+</p>
+</article>
+<article>
+<h2>Kirim saran dan kritik</h2>
+<p>
+Silahkan tulis nama, nomor telepon/WhatsApp yang dapat dihubungi, dan saran anda untuk kami!
+</p>
+<form id="form1" action="file.php" method="post">
+<div>
+<label for="nama">Masukkan Nama Anda:</label>
+<input type="text" name="nama" title="Ketik Nama Anda">
+</div>
+<div>
+<label for="telepon">Masukkan Nomor Telepon Anda:</label>
+<input type="text" name="telepon" title="Ketik Nomor Telepon Anda">
+</div>
+<div>
+<label for="komentar">Masukkan Saran Anda:</label>
+<textarea name="komentar" title="Saran Anda"></textarea>
+</div>
+<div>
+<label for="submit">Kirim:</label>
+<input type="submit" name="submit" value="kirim">
+</div>
+</form>
+</article>
+</div>
+<aside>
+<article>
+<h2>Website Flanet Kreatif</h1>
+<p>
+Kreatif mengekspresikan logika didalam coding
+</p>
+<figure>
+<img src="assets/image/logo.jpg" alt="logo flanet kreatif">
+<figcaption>Logo</figcaption>
+</figure>
+</article>
+</aside>
+</section>
+</main>
+<footer role="contentinfo" aria-label="footer">
+<p>
+design by Kelompok 5
+</p>
+<nav>
+<a href='#konten'>kembali ke atas</a>
+<a href='index.html'>Halaman Utama</a>
+</nav>
+<p>
+copyright 2020 flanet kreatif. All rights reserved.
+</p>
+</footer>
+<script src="assets/js/app.js"></script>
 </body>
 </html>
